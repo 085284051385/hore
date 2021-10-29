@@ -70,7 +70,7 @@ zeroyt7.on("group-participants-update", async (anu) => {
           "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
       }
       if (anu.action == "add" && mem.includes(zeroyt7.user.jid)) {
-        zeroyt7.sendMessage(anu.jid, "Hallo...! *Terima kasih telah mengundang Xrutz BOT!*\nSaya akan membantu jika perlu!\nUntuk memulai Bot, *Silahkan ketik #menu* Ya!", "conversation")
+        zeroyt7.sendMessage(anu.jid, "Hallo...! *Terima kasih telah mengundang OCHOBOTZ !*\nSaya akan membantu jika perlu!\nUntuk memulai Bot, *Silahkan ketik #menu* Ya!", "conversation")
       }
       if (!isWelkom) return
       if (anu.action == "add" && !mem.includes(zeroyt7.user.jid)) {
@@ -91,7 +91,7 @@ zeroyt7.on("group-participants-update", async (anu) => {
         but = [
           { buttonId: 'add', buttonText: { displayText: 'SELAMAT DATANG' }, type: 1 }
         ]
-        sendButImage(mdata.id, wel, "© ", buff, but)
+        sendButImage(mdata.id, wel, "© OCHO", buff, but)
       }
       if (!isWelkom) return
       if (anu.action == "remove" && !mem.includes(zeroyt7.user.jid)) {
@@ -112,7 +112,7 @@ zeroyt7.on("group-participants-update", async (anu) => {
         but = [
           { buttonId: 'remove', buttonText: { displayText: 'Selamat Tinggal' }, type: 1 }
         ]
-        sendButImage(mdata.id, out, "© ", buff, but)
+        sendButImage(mdata.id, out, "© OCHO", buff, but)
       }
       if (anu.action == "promote") {
         const mdata = await zeroyt7.groupMetadata(anu.jid)
