@@ -91,7 +91,7 @@ zeroyt7.on("group-participants-update", async (anu) => {
         but = [
           { buttonId: 'add', buttonText: { displayText: 'SELAMAT DATANG' }, type: 1 }
         ]
-        sendButImage(mdata.id, wel, "© OCHO", buff, but)
+        sendButImage(mdata.id, wel, "Â© ", buff, but)
       }
       if (!isWelkom) return
       if (anu.action == "remove" && !mem.includes(zeroyt7.user.jid)) {
@@ -112,7 +112,7 @@ zeroyt7.on("group-participants-update", async (anu) => {
         but = [
           { buttonId: 'remove', buttonText: { displayText: 'Selamat Tinggal' }, type: 1 }
         ]
-        sendButImage(mdata.id, out, "© OCHO", buff, but)
+        sendButImage(mdata.id, out, "Â© ", buff, but)
       }
       if (anu.action == "promote") {
         const mdata = await zeroyt7.groupMetadata(anu.jid)
