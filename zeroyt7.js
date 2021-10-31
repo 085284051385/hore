@@ -2123,6 +2123,7 @@ but = [{ buttonId: `${prefix}listsewa`, buttonText: { displayText: 'LIST HARGA' 
 sendButton(from, "Silahkan Pilih List Sewa Di Bawah Ini\n*Chat Owner Bot untuk Info Selengkapnya!*", faketeks, but, mek)
 break
 case 'listsewa':
+case 'sewabot':
           gopeynya: 'https://i.postimg.cc/MHcgVrJv/IMG-20211018-112506.jpg'
 teks = `╭─❒ 「 *LIST HARGA* 」 
 │ ➤ Sehari = *2K*
